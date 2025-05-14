@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes | Your Chef's Choice</title>
+  <meta name="description" content="Browse our collection of delicious recipes">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Your Chef's Choice</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html" class="active">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="search-toggle" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-utensils"></i>
+          </button>
+        </div>
+      </div>
+      <div class="search-container">
+        <form class="search-form">
+          <input type="search" placeholder="Search recipes..." aria-label="Search recipes">
+          <button type="submit" aria-label="Submit search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header container">
+      <h1 class="animated-title">Our Recipes</h1>
+      <p>Discover our collection of delicious recipes for every occasion, from quick weeknight dinners to impressive party dishes.</p>
+    </section>
+
+    <section class="recipe-filters container">
+      <div class="filter-container">
+        <div class="search-filter">
+          <input type="text" placeholder="Search recipes..." id="recipe-search">
+        </div>
+        <div class="dropdown-filters">
+          <div class="dropdown">
+            <button class="dropdown-toggle">
+              <span>Category</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <label class="dropdown-item">
+                <input type="radio" name="category" value="all" checked>
+                <span>All Categories</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="category" value="breakfast">
+                <span>Breakfast</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="category" value="lunch">
+                <span>Lunch</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="category" value="dinner">
+                <span>Dinner</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="category" value="dessert">
+                <span>Dessert</span>
+              </label>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-toggle">
+              <span>Difficulty</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <label class="dropdown-item">
+                <input type="radio" name="difficulty" value="all" checked>
+                <span>All Difficulties</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="difficulty" value="easy">
+                <span>Easy</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="difficulty" value="medium">
+                <span>Medium</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="difficulty" value="hard">
+                <span>Hard</span>
+              </label>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-toggle">
+              <span>Time</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <label class="dropdown-item">
+                <input type="radio" name="time" value="all" checked>
+                <span>All Times</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="time" value="under30">
+                <span>Under 30 minutes</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="time" value="30to60">
+                <span>30-60 minutes</span>
+              </label>
+              <label class="dropdown-item">
+                <input type="radio" name="time" value="over60">
+                <span>Over 60 minutes</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="recipe-grid" id="recipe-grid">
+        &lt;!-- Recipe cards will be loaded here -->
+      </div>
+      <div class="pagination">
+        <button class="pagination-btn" id="prev-page" disabled>Previous</button>
+        <button class="pagination-btn" id="next-page">Next</button>
+      </div>
+    </section>
+
+    <section class="tags-cloud container">
+      <h2 class="section-title">Popular Tags</h2>
+      <div class="tags">
+        <a href="#" class="tag">Vegetarian</a>
+        <a href="#" class="tag">Quick Dinner</a>
+        <a href="#" class="tag">Healthy</a>
+        <a href="#" class="tag">Baking</a>
+        <a href="#" class="tag">Pasta</a>
+        <a href="#" class="tag">Chicken</a>
+        <a href="#" class="tag">Dessert</a>
+        <a href="#" class="tag">Breakfast</a>
+        <a href="#" class="tag">Soup</a>
+        <a href="#" class="tag">Salad</a>
+        <a href="#" class="tag">Vegan</a>
+        <a href="#" class="tag">Gluten-Free</a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content animated-element">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Sign up to receive new recipes, cooking tips, and exclusive content directly in your inbox.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <div class="form-message" id="newsletter-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html" class="logo">Your Chef's Choice</a>
+          <p>A food blog dedicated to sharing delicious, approachable recipes that anyone can make at home.</p>
+          <div class="social-links">
+            <a href="https://twitter.com/yourchefschoice" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourchefschoice" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="recipes.html?category=breakfast">Breakfast</a></li>
+            <li><a href="recipes.html?category=lunch">Lunch</a></li>
+            <li><a href="recipes.html?category=dinner">Dinner</a></li>
+            <li><a href="recipes.html?category=dessert">Dessert</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Your Chef's Choice. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/recipes.js"></script>
+  <script src="js/image-fallback.js"></script>
+</body>
+</html>

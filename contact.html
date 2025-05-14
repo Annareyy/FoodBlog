@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Your Chef's Choice</title>
+  <meta name="description" content="Get in touch with Your Chef's Choice">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Your Chef's Choice</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="search-toggle" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-utensils"></i>
+          </button>
+        </div>
+      </div>
+      <div class="search-container">
+        <form class="search-form">
+          <input type="search" placeholder="Search recipes..." aria-label="Search recipes">
+          <button type="submit" aria-label="Submit search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header container">
+      <h1 class="animated-title">Contact Us</h1>
+      <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you!</p>
+    </section>
+
+    <section class="contact-form-section container">
+      <div class="contact-card animated-element">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error-message" id="name-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="email-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+            <div class="error-message" id="subject-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <div class="error-message" id="message-error"></div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div class="form-message" id="form-message"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-info container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-item animated-element">
+          <i class="fas fa-envelope"></i>
+          <h3>Email Us</h3>
+          <p>hello@yourchefschoice.com</p>
+          <p>support@yourchefschoice.com</p>
+        </div>
+        <div class="contact-item animated-element">
+          <i class="fas fa-phone-alt"></i>
+          <h3>Call Us</h3>
+          <p>+254 712 345 678</p>
+          <p>Mon-Fri, 9am-5pm EAT</p>
+        </div>
+        <div class="contact-item animated-element">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Visit Us</h3>
+          <p>123 Culinary Street</p>
+          <p>Nairobi, Kenya</p>
+        </div>
+        <div class="contact-item animated-element">
+          <i class="fas fa-share-alt"></i>
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://twitter.com/yourchefschoice" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourchefschoice" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item animated-element">
+          <h3>How can I submit my recipe to Your Chef's Choice?</h3>
+          <p>We love featuring recipes from our community! Please send your recipe along with high-quality photos to submissions@yourchefschoice.com. Include your name and a brief story about the recipe.</p>
+        </div>
+        <div class="faq-item animated-element">
+          <h3>Do you offer cooking classes or workshops?</h3>
+          <p>Yes, we host monthly virtual cooking workshops and occasional in-person classes in Nairobi. Check our Events page or subscribe to our newsletter to stay updated on upcoming classes.</p>
+        </div>
+        <div class="faq-item animated-element">
+          <h3>Can I republish your recipes on my website?</h3>
+          <p>Our recipes and photos are copyrighted. You may share a photo with a link back to our website, but please don't republish the full recipe without permission. Contact us for collaboration opportunities.</p>
+        </div>
+        <div class="faq-item animated-element">
+          <h3>I have a food product. How can I collaborate with Your Chef's Choice?</h3>
+          <p>We're open to collaborations with brands that align with our values. Please email partnerships@yourchefschoice.com with details about your product and collaboration ideas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html" class="logo">Your Chef's Choice</a>
+          <p>A food blog dedicated to sharing delicious, approachable recipes that anyone can make at home.</p>
+          <div class="social-links">
+            <a href="https://twitter.com/yourchefschoice" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourchefschoice" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="recipes.html?category=breakfast">Breakfast</a></li>
+            <li><a href="recipes.html?category=lunch">Lunch</a></li>
+            <li><a href="recipes.html?category=dinner">Dinner</a></li>
+            <li><a href="recipes.html?category=dessert">Dessert</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Your Chef's Choice. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/image-fallback.js"></script>
+</body>
+</html>

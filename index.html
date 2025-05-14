@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Chef's Choice | Delicious Recipes & Food Adventures</title>
+  <meta name="description" content="A food blog sharing delicious recipes and culinary adventures">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Your Chef's Choice</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="search-toggle" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-utensils"></i>
+          </button>
+        </div>
+      </div>
+      <div class="search-container">
+        <form class="search-form">
+          <input type="search" placeholder="Search recipes..." aria-label="Search recipes">
+          <button type="submit" aria-label="Submit search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image">
+        <!-- Hero image is set via JavaScript -->
+      </div>
+      <div class="hero-content">
+        <h1 class="animated-title">Your Chef's Choice</h1>
+        <p class="animated-subtitle">Discover delicious recipes and culinary adventures</p>
+        <a href="recipes.html" class="btn btn-primary pulse-animation">Explore Recipes</a>
+      </div>
+    </section>
+
+    <!-- About Blog Section -->
+    <section class="about-blog container">
+      <div class="section-content text-center animated-element">
+        <h2>Welcome to Your Chef's Choice</h2>
+        <p>
+          A food blog dedicated to sharing delicious, approachable recipes that anyone can make at home. From quick
+          weeknight dinners to impressive dinner party dishes, we've got you covered.
+        </p>
+        <div class="button-group">
+          <a href="about.html" class="btn btn-outline">About Us</a>
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Recipes -->
+    <section class="featured-recipes container">
+      <h2 class="section-title animated-title">Featured Recipes</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <div class="recipe-card featured">
+              <div class="recipe-image">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=880&q=80" alt="Creamy Garlic Parmesan Pasta">
+              </div>
+              <div class="recipe-content">
+                <span class="recipe-tag">Featured Recipe</span>
+                <h3>Creamy Garlic Parmesan Pasta</h3>
+                <p>A delicious pasta dish with a rich and creamy garlic parmesan sauce...</p>
+                <a href="recipe-detail.html?id=1" class="btn btn-outline btn-light">View Recipe</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="recipe-card featured">
+              <div class="recipe-image">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1013&q=80" alt="Lemon Herb Roasted Chicken">
+              </div>
+              <div class="recipe-content">
+                <span class="recipe-tag">Featured Recipe</span>
+                <h3>Lemon Herb Roasted Chicken</h3>
+                <p>Juicy roasted chicken with bright lemon and aromatic herbs...</p>
+                <a href="recipe-detail.html?id=4" class="btn btn-outline btn-light">View Recipe</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="recipe-card featured">
+              <div class="recipe-image">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1089&q=80" alt="Chocolate Lava Cake">
+              </div>
+              <div class="recipe-content">
+                <span class="recipe-tag">Featured Recipe</span>
+                <h3>Chocolate Lava Cake</h3>
+                <p>Decadent chocolate cake with a warm, gooey center that flows like lava...</p>
+                <a href="recipe-detail.html?id=2" class="btn btn-outline btn-light">View Recipe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow prev" aria-label="Previous slide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next" aria-label="Next slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots"></div>
+      </div>
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="recent-posts container">
+      <h2 class="section-title animated-title">Recent Posts</h2>
+      <div class="recipe-grid">
+        <article class="recipe-card animated-element">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Fresh Garden Salad">
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta">
+              <span class="recipe-date">May 11, 2025</span>
+              <span class="recipe-category">Dinner</span>
+            </div>
+            <h3>Fresh Garden Salad</h3>
+            <p>A refreshing salad with garden-fresh vegetables and a tangy vinaigrette...</p>
+            <div class="recipe-details">
+              <span><strong>Prep:</strong> 15 mins</span>
+              <span><strong>Cook:</strong> 0 mins</span>
+            </div>
+            <a href="recipe-detail.html?id=5" class="btn btn-outline">Read More</a>
+          </div>
+        </article>
+        <article class="recipe-card animated-element">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Chocolate Chip Cookies">
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta">
+              <span class="recipe-date">May 12, 2025</span>
+              <span class="recipe-category">Dessert</span>
+            </div>
+            <h3>Chocolate Chip Cookies</h3>
+            <p>Classic homemade cookies with gooey chocolate chips and a soft center...</p>
+            <div class="recipe-details">
+              <span><strong>Prep:</strong> 16 mins</span>
+              <span><strong>Cook:</strong> 12 mins</span>
+            </div>
+            <a href="recipe-detail.html?id=9" class="btn btn-outline">Read More</a>
+          </div>
+        </article>
+        <article class="recipe-card animated-element">
+          <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1502741224143-90386d7f8c82?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80" alt="Berry Smoothie Bowl">
+          </div>
+          <div class="recipe-content">
+            <div class="recipe-meta">
+              <span class="recipe-date">May 13, 2025</span>
+              <span class="recipe-category">Breakfast</span>
+            </div>
+            <h3>Berry Smoothie Bowl</h3>
+            <p>A nutritious and colorful breakfast bowl packed with fresh berries and toppings...</p>
+            <div class="recipe-details">
+              <span><strong>Prep:</strong> 10 mins</span>
+              <span><strong>Cook:</strong> 0 mins</span>
+            </div>
+            <a href="recipe-detail.html?id=6" class="btn btn-outline">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center">
+        <a href="recipes.html" class="btn btn-outline">View All Recipes</a>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content animated-element">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Sign up to receive new recipes, cooking tips, and exclusive content directly in your inbox.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <div class="form-message" id="newsletter-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Categories -->
+    <section class="food-categories container">
+      <h2 class="section-title animated-title">Explore by Category</h2>
+      <div class="categories-grid">
+        <a href="recipes.html?category=breakfast" class="category-card animated-element">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Breakfast">
+          </div>
+          <div class="category-overlay">
+            <h3>Breakfast</h3>
+          </div>
+        </a>
+        <a href="recipes.html?category=lunch" class="category-card animated-element">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Lunch">
+          </div>
+          <div class="category-overlay">
+            <h3>Lunch</h3>
+          </div>
+        </a>
+        <a href="recipes.html?category=dinner" class="category-card animated-element">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1158&q=80" alt="Dinner">
+          </div>
+          <div class="category-overlay">
+            <h3>Dinner</h3>
+          </div>
+        </a>
+        <a href="recipes.html?category=dessert" class="category-card animated-element">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Desserts">
+          </div>
+          <div class="category-overlay">
+            <h3>Desserts</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html" class="logo">Your Chef's Choice</a>
+          <p>A food blog dedicated to sharing delicious, approachable recipes that anyone can make at home.</p>
+          <div class="social-links">
+            <a href="https://twitter.com/yourchefschoice" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourchefschoice" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="recipes.html?category=breakfast">Breakfast</a></li>
+            <li><a href="recipes.html?category=lunch">Lunch</a></li>
+            <li><a href="recipes.html?category=dinner">Dinner</a></li>
+            <li><a href="recipes.html?category=dessert">Dessert</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Your Chef's Choice. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/image-loader.js"></script>
+</body>
+</html>
